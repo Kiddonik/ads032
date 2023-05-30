@@ -4,12 +4,13 @@ import Home from "./Pages/Home"
 import Novo from "./Pages/Novo"
 import Error404 from "./Pages/Erro404"
 import Layout from "./Components/Layout"
+import "./App.css"
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
+        <Route element={<Layout/>}>
           <Route path="/" element={<Home />} />
           <Route path="/novo" element={<Novo />} />
         </Route>

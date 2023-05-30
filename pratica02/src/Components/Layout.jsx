@@ -1,6 +1,6 @@
 import "./Layout.css"
 import Navbar from "./Navbar"
-import Outlet from "react-router-dom"
+import { Outlet } from "react-router-dom"
 
 export default function Layout() {
     return (
@@ -10,19 +10,18 @@ export default function Layout() {
                     @Contatinhos
                 </h1>
                 <Navbar></Navbar>
-                <main>
-                    <Outlet>
 
-                    </Outlet>
-                </main>
             </header>
+            <main>
+                <Outlet></Outlet>
+            </main>
             <footer>
                 <p>
-                Copyright 2023
+                    Copyright 2023
                 </p>
             </footer>
 
-        
+
         </>
-            )
-   }
+    )
+}

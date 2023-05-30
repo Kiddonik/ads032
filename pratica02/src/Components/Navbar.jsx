@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import "./Navbar.css"
 
 
@@ -5,12 +6,13 @@ export default function Navbar(){
     return(
        
      <ul>
-        <li path="/">
-        Meus Contatos
+        <li>
+         <NavLink to="/">Meus Contatos</NavLink>
+        
         </li>
 
-        <li path="/novo">
-        Novos Contatos
+        <li >
+        <NavLink to="/novo">Novos Contatos</NavLink>
         </li>
      </ul>
     )
